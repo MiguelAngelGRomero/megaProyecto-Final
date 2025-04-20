@@ -1,0 +1,59 @@
+.titulo {
+    text-align: left; // Alinea el contenido del elemento con clase 'titulo' a la izquierda.
+}
+
+h1 {
+    color: white; // Establece el color del texto del encabezado h1 a blanco.
+    border-radius: 4px; // Aplica bordes ligeramente redondeados al fondo del h1 (útil si se le asigna un background).
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna, con alternativas seguras por si la primera no está disponible.
+    padding: .5px 1px; // Espaciado interno mínimo (0.5px arriba y abajo, 1px izquierda y derecha).
+}
+
+
+.divContenido {
+    position: relative; // Permite mover el elemento con `left`, `top`, etc.
+    left: 25px; // Desplaza el contenedor 25px hacia la derecha.
+    background-color: #1e1e1e; // Color de fondo oscuro.
+    border-radius: 12px; // Bordes redondeados.
+    padding: 10px; // Espacio interno entre el borde y el contenido.
+    width: 300px; // Ancho fijo del contenedor.
+    color: white; // Color del texto.
+    text-align: center; // Centra el texto horizontalmente.
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente del texto.
+    margin: 20px; // Margen externo para separar del resto de los elementos.
+    display: inline-block; // Permite que el contenedor esté en línea y se comporte como bloque.
+    z-index: 1; // Asegura que el contenedor tenga cierta prioridad de apilamiento.
+}
+
+.imagen {
+    width: 100%; // La imagen ocupará el 100% del ancho del contenedor.
+    height: auto; // Mantiene la proporción original de la imagen.
+    border-radius: 8px; // Bordes ligeramente redondeados en la imagen.
+    margin-bottom: 15px; // Espacio inferior entre la imagen y el siguiente elemento.
+    display: block; // Evita que la imagen se comporte como `inline`.
+    z-index: 0; // Nivel más bajo de apilamiento (por si hay elementos encima).
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0); // Fondo transparente.
+    color: white; // Color del texto del botón.
+    padding: 10px 35px; // Espaciado interno (vertical 10px, horizontal 35px).
+    margin: 8px 6px; // Espacio exterior (vertical 8px, horizontal 6px).
+    border-radius: 8px; // Bordes redondeados para los botones.
+    border: none; // Sin borde por defecto.
+    position: relative; // Necesario para aplicar `z-index` y mantener su posición en flujo.
+    z-index: 10; // Asegura que los botones estén por encima de otros elementos si se superponen.
+}
+
+button:hover {
+    border: solid 1px white; // Agrega un borde blanco al pasar el mouse.
+    background-color: white; // Fondo blanco en hover.
+    color: black; // Cambia el color del texto a negro en hover.
+}
+
+h2 {
+    color: white; // Establece el color del texto del encabezado h1 a blanco.
+    border-radius: 4px; // Aplica bordes ligeramente redondeados al fondo del h1 (útil si se le asigna un background).
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna, con alternativas seguras por si la primera no está disponible.
+    padding: .5px 1px; // Espaciado interno mínimo (0.5px arriba y abajo, 1px izquierda y derecha).
+}

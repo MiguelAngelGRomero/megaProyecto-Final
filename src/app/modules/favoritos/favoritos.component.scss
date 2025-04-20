@@ -1,0 +1,10 @@
+.titulo {
+    text-align: left; // Alinea el contenido del elemento con clase 'titulo' a la izquierda.
+}
+
+h1 {
+    color: white; // Establece el color del texto del encabezado h1 a blanco.
+    border-radius: 4px; // Aplica bordes ligeramente redondeados al fondo del h1 (útil si se le asigna un background).
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna, con alternativas seguras por si la primera no está disponible.
+    padding: .5px 1px; // Espaciado interno mínimo (0.5px arriba y abajo, 1px izquierda y derecha).
+}

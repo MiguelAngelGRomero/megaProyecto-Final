@@ -1,0 +1,24 @@
+<div class="titulo">
+    <h1>Hubes: Series</h1>
+</div>
+<app-hub></app-hub>
+<br><br>
+<div id="contenedorContenido">
+    <div *ngFor="let item of contenidoSeries" class="divContenido">
+        <img class="imagen" [src]="item.imagen" alt="cargando...">
+        <p>{{ item.titulo }}</p>
+        <button (click)="meGusta(item.titulo)">
+            Me gusta
+            <i class="uil uil-heart"></i>
+        </button>
+
+        <button (click)="ocultar(item)">
+            Ocultar
+            <i class="uil uil-eye-slash"></i>
+        </button>
+        <button>
+            Favorito
+            <i class="uil uil-star"></i>
+        </button>
+    </div>
+</div>

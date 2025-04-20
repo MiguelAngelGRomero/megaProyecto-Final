@@ -1,0 +1,106 @@
+// Estilo del contenedor del título
+.titulo {
+    text-align: center; // Centra horizontalmente el contenido dentro del contenedor
+    margin-bottom: 2rem; // Espacio debajo del título para separarlo del resto
+
+    h1 {
+        color: white; // Texto blanco
+        font-size: 2rem; // Tamaño de fuente grande para destacar
+        border-radius: 6px; // Bordes ligeramente redondeados
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna
+        padding: 1rem 1.5rem; // Espaciado interno
+        display: inline-block; // Hace que el `h1` no ocupe todo el ancho
+    }
+}
+
+// Contenedor de los botones principales
+.divBotones {
+    display: flex; // Usa flexbox para organización
+    flex-direction: column; // Acomoda los botones en una columna
+    align-items: center; // Centra horizontalmente los elementos
+    gap: 1rem; // Espaciado entre los botones
+    margin-top: 1rem; // Separación superior
+}
+
+// Estilos generales de los botones
+button {
+    background-color: rgba(0, 0, 0, 0.1); // Fondo negro con opacidad
+    color: white; // Texto blanco
+    padding: 12px 40px; // Espaciado interno vertical y horizontal
+    margin: 0.5rem; // Espaciado exterior
+    border-radius: 12px; // Bordes redondeados
+    border: 1px solid transparent; // Borde transparente por defecto
+    font-size: 1rem; // Tamaño estándar de texto
+    font-weight: bold; // Texto en negrita
+    letter-spacing: 0.5px; // Espacio entre letras
+    transition: all 0.3s ease; // Transición suave en cambios de estilo
+    display: flex; // Flex para alinear icono y texto
+    align-items: center; // Alineación vertical centrada
+    gap: 0.5rem; // Espacio entre icono y texto
+}
+
+// Tamaño del icono dentro del botón
+button i {
+    font-size: 1.3rem; // Icono ligeramente más grande que el texto
+}
+
+// Efecto al pasar el mouse sobre el botón
+button:hover {
+    background-color: white; // Fondo cambia a blanco
+    color: #222; // Texto se vuelve oscuro
+    border: 1px solid white; // Borde blanco
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); // Sombra blanca difusa
+    transform: translateY(-2px); // Eleva ligeramente el botón
+}
+
+// Estilos del formulario
+form {
+    display: flex; // Flexbox para organizar inputs
+    flex-direction: column; // Disposición vertical
+    align-items: center; // Centrado horizontal
+    gap: 1rem; // Espacio entre los inputs
+    margin-top: 2rem; // Separación con respecto al contenido anterior
+}
+
+// Grupo de campos (etiqueta + input)
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left; // Alinea el texto a la izquierda
+    color: white; // Texto blanco
+    width: 100%; // Ocupa todo el ancho disponible
+    max-width: 300px; // No excede los 300px de ancho
+}
+
+// Estilo de las etiquetas del input
+.input-group label {
+    margin-bottom: 0.3rem; // Pequeño espacio debajo de la etiqueta
+    font-weight: bold; // Texto más visible
+}
+
+// Estilo de los inputs
+.input-group input {
+    padding: 10px; // Espaciado interno
+    border-radius: 8px; // Bordes redondeados
+    border: none; // Sin borde
+    outline: none; // Quita borde azul al hacer foco
+    font-size: 1rem; // Tamaño estándar de texto
+}
+
+// Contenedor para los links secundarios (como "¿Olvidaste tu contraseña?")
+.links-secundarios {
+    margin-top: 1.5rem; // Espacio superior
+    text-align: center; // Centrado horizontal
+
+    a {
+        color: #aaa; // Color gris claro
+        text-decoration: none; // Sin subrayado
+        margin: 0 10px; // Separación horizontal entre enlaces
+        font-size: 0.9rem; // Tamaño ligeramente menor
+        transition: color 0.2s ease; // Transición de color suave
+    }
+
+    a:hover {
+        color: white; // Al pasar el mouse cambia a blanco
+    }
+}

@@ -1,0 +1,21 @@
+.divBotones {
+    text-align: center; // Centra horizontalmente el contenido dentro del contenedor con clase 'divBotones'.
+}
+
+
+button {
+    background-color: rgba(0, 0, 0, 0); // Fondo transparente.
+    color: white; // Color del texto del botón.
+    padding: 10px 35px; // Espaciado interno (vertical 10px, horizontal 35px).
+    margin: 8px 6px; // Espacio exterior (vertical 8px, horizontal 6px).
+    border-radius: 8px; // Bordes redondeados para los botones.
+    border: none; // Sin borde por defecto.
+    position: relative; // Necesario para aplicar `z-index` y mantener su posición en flujo.
+    z-index: 10; // Asegura que los botones estén por encima de otros elementos si se superponen.
+}
+
+button:hover {
+    border: solid 1px white; // Agrega un borde blanco al pasar el mouse.
+    background-color: white; // Fondo blanco en hover.
+    color: black; // Cambia el color del texto a negro en hover.
+}

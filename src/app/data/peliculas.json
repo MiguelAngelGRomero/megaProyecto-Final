@@ -1,0 +1,36 @@
+{
+    "contenido": [
+        {
+            "titulo": "Mi vecino Totoro",
+            "imagen": "/img/miVecino.jpg"
+        },
+        {
+            "titulo": "El viaje de Chihiro",
+            "imagen": "/img/elViaje.jpeg"
+        },
+        {
+            "titulo": "El caballero oscuro",
+            "imagen": "/img/batman.jpg"
+        },
+        {
+            "titulo": "Avengers: Endgame",
+            "imagen": "/img/avengersEnd.jpeg"
+        },
+        {
+            "titulo": "Forrest Gump",
+            "imagen": "/img/forest.jpeg"
+        },
+        {
+            "titulo": "Parásitos",
+            "imagen": "/img/parsitos.jpeg"
+        },
+        {
+            "titulo": "Interstellar",
+            "imagen": "/img/inter.jpeg"
+        },
+        {
+            "titulo": "Amor y monstruos",
+            "imagen": "/img/amorYmons.jpg"
+        }
+    ]
+}
