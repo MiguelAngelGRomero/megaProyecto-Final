@@ -1,27 +1,46 @@
-# Hubes
+# megaProyecto = Sprint 2  Hubes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.18.
+Este es un proyecto web que simula una plataforma de streaming con navegación entre secciones como **Películas**,
+**Series**, **Favoritos** y **Configuración**.
 
-## Development server
+## 🚀 Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Esta generado con la version 18.2.18 de angular [Angular CLI](https://github.com/angular/angular-cli) .
 
-## Code scaffolding
+- Navegación entre diferentes componentes
+- Visualización de series y películas con imágenes
+- Separación del contenido por tipo en archivos JSON
+- Estilo limpio y responsivo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📸 Vista previa
 
-## Build
+![Hubes](img/hubes.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Que hice mal? ❌
 
-## Running unit tests
+- Manejar los cambios en la rama Main ❎
+- No implementar la vista de las peliculas ❎
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Que hice bien? ✔️
 
-## Running end-to-end tests
+- Implementar una vista agradable de las peliculas ✅
+- Implementar botones reactivos ✅
+- Buenas practicas ✅
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ⚙️ Tecnologías usadas
+- Angular 18
 
-## Further help
+- Html
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- CSS
+
+- TypeScript
+
+- JSON
+
+## 📁 Contenido JSON
+
+El contenido multimedia se divide en tres archivos:
+- `contenido.json`: Contiene un listado de series.
+- `series.json`: Contiene un listado de series.
+- `peliculas.json`: Contiene un listado de películas.
