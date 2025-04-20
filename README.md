@@ -14,7 +14,29 @@ Esta generado con la version 18.2.18 de angular [Angular CLI](https://github.com
 
 ## 📸 Vista previa
 
-![Hubes](./public/img/hubes.png)
+- Login
+
+![Login](./public/img/login.png)
+
+- Inicio
+
+![Inicio](./public/img/hubes.png)
+
+- Favoritos
+
+![Favoritos](./public/img/favoritos.png)
+
+- Peliculas
+
+![Peliculas](./public/img/peliculas.png)
+
+- Series
+
+![Series](./public/img/series.png)
+
+- configuracion
+
+![Configuracion](./public/img/configuracion.png)
 
 ## Que hice mal? ❌
 
