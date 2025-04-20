@@ -14,7 +14,7 @@ Aquí está la presentación del Sprint 2, donde se muestran las tareas completa
 ### ✅ Resumen breve del Sprint 2
 - Migración a Angular 18 iniciada
 - Uso de TypeScript en componentes clave
-- Primeras implementaciones de login y consumo de base de datos
+- Primeras implementaciones de login y consumo de JSON por ahora.
 - Tareas pendientes: completar login, seguridad y responsividad
 
 ---
