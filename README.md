@@ -14,7 +14,7 @@ Esta generado con la version 18.2.18 de angular [Angular CLI](https://github.com
 
 ## 📸 Vista previa
 
-![Hubes](img/hubes.png)
+![Hubes](./public/img/hubes.png)
 
 ## Que hice mal? ❌
 
