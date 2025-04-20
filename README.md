@@ -84,19 +84,19 @@ Este proyecto fue generado con la versión **18.2.18** de Angular usando el [Ang
 
 ## 🧩 Instalación y ejecución
 
-# 1. Clona este repositorio
+### 1. Clona este repositorio
 git clone https://github.com/tu-usuario/tu-repo.git
 
-# 2. Entra al directorio del proyecto
+### 2. Entra al directorio del proyecto
 cd tu-repo
 
-# 3. Instala las dependencias
+### 3. Instala las dependencias
 npm install
 
-# 4. Corre el servidor de desarrollo
+### 4. Corre el servidor de desarrollo
 ng serve
 
-# 5. Abre tu navegador en
+### 5. Abre tu navegador en
 http://localhost:4200/
 
 
