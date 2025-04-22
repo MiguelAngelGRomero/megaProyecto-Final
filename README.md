@@ -85,10 +85,10 @@ Este proyecto fue generado con la versión **18.2.18** de Angular usando el [Ang
 ## 🧩 Instalación y ejecución
 
 ### 1. Clona este repositorio
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/MiguelAngelGRomero/megaProyecto.git
 
 ### 2. Entra al directorio del proyecto
-cd tu-repo
+cd Hubes
 
 ### 3. Instala las dependencias
 npm install
