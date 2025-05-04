@@ -1,23 +1,23 @@
 <hr>
-    <div class="divBotones">
-        <button [routerLink]="['/inicio']">
-            <i class="uil uil-estate"></i> Inicio
-        </button>
+<div class="divBotones">
+    <button [routerLink]="['/inicio']" (click)="navegar('/inicio')">
+        <i class="uil uil-estate"></i> Inicio
+    </button>
 
-        <button [routerLink]="['/favoritos']">
-            <i class="uil uil-star"></i> Favoritos
-        </button>
-    
-        <button [routerLink]="['/series']">
-            <i class="uil uil-tv-retro"></i> Series
-        </button>
-    
-        <button [routerLink]="['/peliculas']">
-            <i class="uil uil-film"></i> Películas
-        </button>
-    
-        <button [routerLink]="['/configuracion']">
-            <i class="uil uil-cog"></i> Configuración
-        </button>
-    
-    </div>
+    <button [routerLink]="['/favoritos']" (click)="navegar('/favoritos')">
+        <i class="uil uil-star"></i> Favoritos
+    </button>
+
+    <button [routerLink]="['/series']" (click)="navegar('/series')">
+        <i class="uil uil-tv-retro"></i> Series
+    </button>
+
+    <button [routerLink]="['/peliculas']" (click)="navegar('/peliculas')">
+        <i class="uil uil-film"></i> Películas
+    </button>
+
+    <button [routerLink]="['/configuracion']" (click)="navegar('/configuracion')">
+        <i class="uil uil-cog"></i> Configuración
+    </button>
+</div>
+

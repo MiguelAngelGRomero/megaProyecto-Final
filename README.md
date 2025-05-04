@@ -1,21 +1,37 @@
-# 🎬 megaProyecto - Sprint 2 Hubes  
+# 🎬 megaProyecto - Sprint 3  Pruebas - Hubes
 **by Miguel Angel Gómez Romero**
 
 Este es un proyecto web que simula una plataforma de streaming con navegación entre secciones como **Películas**, **Series**, **Favoritos** y **Configuración**.
 
 ---
 
+## 🧪 Pruebas
+Las pruebas unitarias fueron escritas utilizando el framework Jasmine y se ejecutan mediante el Karma Test Runner.
+
+Para correr las pruebas:
+
+ng test
+
+![Pruebas](./public/img/pruebasConJasmine.jpeg)
+
+ng test --code-coverage
+
+![PruebasCoverage](./public/img/Coverage.jpeg)
+
+---
+
 ## 📊 Sprint Review
 
-Aquí está la presentación del Sprint 2, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
+Aquí está la presentación del Sprint 3, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
 
-[🔗 Ver presentación Sprint 2 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
+[🔗 Ver presentación Sprint 3 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
 ### ✅ Resumen breve del Sprint 2
-- Migración a Angular 18 iniciada
-- Uso de TypeScript en componentes clave
-- Primeras implementaciones de login y consumo de JSON por ahora.
-- Tareas pendientes: completar login, seguridad y responsividad
+- Responsividad
+- Performance
+- Asincronos.
+- Testing
+- RXJS
 
 ---
 
@@ -55,6 +71,7 @@ Este proyecto fue generado con la versión **18.2.18** de Angular usando el [Ang
 ## ❌ ¿Qué hice mal?
 - Manejar los cambios directamente en la rama `main` ❎  
 - No implementar correctamente la vista de las películas ❎
+- Mal performance
 
 ---
 

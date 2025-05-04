@@ -4,10 +4,11 @@
 <hr>
 <div class="divBotones">
     <button [routerLink]="['/inicio']">
-            <i class="uil uil-estate"></i> Inicio
+        <i class="uil uil-estate"></i> Inicio
     </button>
 
-    <button class="bottonCerrar" [routerLink]="['/']">
+    <button class="bottonCerrar" [routerLink]="['/']" (click)="cerrarSesion()">
         <i class="uil uil-signout"></i> Cerrar Sesion
     </button>
 </div>
+
