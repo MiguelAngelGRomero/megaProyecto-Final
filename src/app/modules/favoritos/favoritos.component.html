@@ -1,5 +1,18 @@
 <div class="titulo">
     <h1>Hubes: Favoritos</h1>
 </div>
-
 <app-hub></app-hub>
+<br><br>
+
+<div id="contenedorFavoritos">
+    <div *ngIf="favoritos.length === 0">No hay elementos favoritos aún.</div>
+
+    <div *ngFor="let item of favoritos" class="divContenido">
+        <img class="imagen" [src]="item.imagen" alt="imagen favorita">
+        <p>{{ item.titulo }}</p>
+        <button (click)="quitarFavorito(item)">
+            Quitar
+        <i class="uil uil-trash-alt"></i>
+        </button>
+    </div>
+</div>

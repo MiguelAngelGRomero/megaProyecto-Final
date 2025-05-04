@@ -1,10 +1,52 @@
 .titulo {
-    text-align: left; // Alinea el contenido del elemento con clase 'titulo' a la izquierda.
+    text-align: left;
 }
 
 h1 {
-    color: white; // Establece el color del texto del encabezado h1 a blanco.
-    border-radius: 4px; // Aplica bordes ligeramente redondeados al fondo del h1 (útil si se le asigna un background).
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna, con alternativas seguras por si la primera no está disponible.
-    padding: .5px 1px; // Espaciado interno mínimo (0.5px arriba y abajo, 1px izquierda y derecha).
+    color: white;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5px 1px;
 }
+
+.divContenido {
+    position: relative;
+    left: 25px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 10px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+    z-index: 0;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 35px;
+    margin: 8px 6px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+button:hover {
+    border: solid 1px white;
+    background-color: white;
+    color: black;
+}
+
