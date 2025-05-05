@@ -26,7 +26,7 @@ Aquí está la presentación del Sprint 3, donde se muestran las tareas completa
 
 [🔗 Ver presentación Sprint 3 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
-### ✅ Resumen breve del Sprint 2
+### ✅ Resumen breve del Sprint 3
 - Responsividad
 - Performance
 - Asincronos.
