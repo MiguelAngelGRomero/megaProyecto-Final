@@ -26,8 +26,8 @@ export class LoginComponent {
   ) {
     // Inicialización del formulario con validaciones
     this.loginForm = this.fb.group({
-      usuario: ['', [Validators.required]],                         // Campo requerido
-      password: ['', [Validators.required, Validators.minLength(6)]] // Requiere mínimo 6 caracteres
+      correo: ['', [Validators.required]],                         // Campo requerido
+      contra: ['', [Validators.required, Validators.minLength(6)]] // Requiere mínimo 6 caracteres
     });
   }
 
@@ -35,27 +35,24 @@ export class LoginComponent {
   login() {
     if (this.loginForm.invalid) return; // Si el formulario es inválido, no hace nada
 
-    const { usuario, password } = this.loginForm.value;
+    const { correo, contra } = this.loginForm.value;
 
-    // Llama al servicio de autenticación
-    this.authService.login(usuario, password).subscribe(success => {
-      if (success) {
-        // Si es exitoso, redirige al inicio
-        this.router.navigate(['/inicio']);
-      } else {
-        // Si falla, muestra mensaje de error
-        this.errorMessage = 'Usuario o contraseña incorrectos';
-      }
+  this.authService.login(correo, contra).subscribe(success => {
+  if (success) {
+    this.router.navigate(['/inicio']);
+  } else {
+    this.errorMessage = 'Correo o contraseña incorrectos';
+  }
     });
   }
 
   // Getters para acceder fácilmente a los controles del formulario
-  get usuario() {
-    return this.loginForm.get('usuario');
+  get correo() {
+    return this.loginForm.get('correo');
   }
 
-  get password() {
-    return this.loginForm.get('password');
+  get contra() {
+    return this.loginForm.get('contra');
   }
 }
 

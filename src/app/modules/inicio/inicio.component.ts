@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { HubComponent } from '@shared/hub/hub.component'; // Componente reutilizable
 import { CommonModule } from '@angular/common'; // Módulo común de Angular
 import { OnInit } from '@angular/core'; // Interfaz para el hook de inicialización
-import contenidoData from 'src/app/data/contenido.json'; // Archivo JSON con datos de contenido
+import { ContenidoService } from 'src/app/services/Contenido.service';
 
 // Declaración del componente como standalone
 @Component({
@@ -17,10 +17,19 @@ export class InicioComponent implements OnInit {
   // Arreglo que almacenará el contenido cargado desde el JSON
   contenido: any[] = [];
 
+  constructor(private contenidoService: ContenidoService) {}
+
   // Hook que se ejecuta al inicializar el componente
   ngOnInit(): void {
-    // Asigna el contenido del archivo JSON al arreglo
-    this.contenido = contenidoData.contenido;
+    this.contenidoService.obtenerContenidos().subscribe({
+      next: data => {
+        this.contenido = data;
+      },
+      error: err => {
+        console.error('Error al cargar contenidos:', err);
+      }
+
+    })
   }
 
   // Muestra un mensaje indicando que al usuario le gusta el contenido

@@ -2,8 +2,7 @@
 import { Component } from '@angular/core';
 import { HubComponent } from '@shared/hub/hub.component'; // Componente compartido
 import { CommonModule } from '@angular/common'; // Funciones comunes de Angular
-import contenidoPeliculas from 'src/app/data/peliculas.json'; // Datos de películas en formato JSON
-
+import { ContenidoService } from 'src/app/services/Contenido.service';
 // Declaración del componente como standalone
 @Component({
   selector: 'app-peliculas',
@@ -15,11 +14,23 @@ import contenidoPeliculas from 'src/app/data/peliculas.json'; // Datos de pelíc
 export class PeliculasComponent {
   // Arreglo para almacenar las películas cargadas
   contenidoPeliculas: any[] = [];
+
+  constructor(private contenidoService: ContenidoService) {}
   
   // Ciclo de vida que se ejecuta al iniciar el componente
   ngOnInit(): void {
     // Carga los datos desde el archivo JSON
-    this.contenidoPeliculas = contenidoPeliculas.contenido;
+    this.contenidoService.obtenerContenidos().subscribe({
+      next: (data) => {
+        // Filtramos solo los que son de tipo 'pelicula' (o 'peliculas' si así lo guardas)
+        this.contenidoPeliculas = data.filter((item: any) =>
+          item.tipo.toLowerCase() === 'película'  // ajusta según tu valor exacto en la base
+        );
+      },
+      error: (err) => {
+        console.error('Error cargando películas:', err);
+      }
+    })
   }
 
   // Muestra un mensaje cuando al usuario le gusta una película

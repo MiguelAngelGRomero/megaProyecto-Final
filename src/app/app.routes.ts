@@ -5,31 +5,37 @@ import { InicioComponent } from '@modules/inicio/inicio.component';
 import { LoginComponent } from '@modules/login/login.component';
 import { PeliculasComponent } from '@modules/peliculas/peliculas.component';
 import { SeriesComponent } from '@modules/series/series.component';
+import { HttpClientModule } from '@angular/common/http';
 
 export const routes: Routes = [
     {
         path: '',
-        component: LoginComponent
+        loadComponent: () =>
+        import('./modules/login/login.component').then(m => m.LoginComponent),
     },
     {
         path: 'inicio',
-        component: InicioComponent
+        loadComponent: () =>
+        import('./modules/inicio/inicio.component').then(m => m.InicioComponent),
     },
     {
         path: 'favoritos',
-        component: FavoritosComponent
+        loadComponent: () =>
+        import('./modules/favoritos/favoritos.component').then(m => m.FavoritosComponent),
     },
     {
         path: 'series',
-        component: SeriesComponent
+        loadComponent: () =>
+        import('./modules/series/series.component').then(m => m.SeriesComponent),
     },
     {
         path: 'peliculas',
-        component: PeliculasComponent
+        loadComponent: () =>
+        import('./modules/peliculas/peliculas.component').then(m => m.PeliculasComponent),
     },
     {
         path: 'configuracion',
-        component: ConfiguracionComponent
-    }
-    
+        loadComponent: () =>
+        import('./modules/Configuracion/configuracion.component').then(m => m.ConfiguracionComponent),
+    },
 ];

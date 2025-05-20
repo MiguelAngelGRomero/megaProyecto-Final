@@ -1,4 +1,4 @@
-# 🎬 megaProyecto - Sprint 3  Pruebas - Hubes
+# 🎬 megaProyecto - Sprint 4  T-SQL - Hubes
 **by Miguel Angel Gómez Romero**
 
 Este es un proyecto web que simula una plataforma de streaming con navegación entre secciones como **Películas**, **Series**, **Favoritos** y **Configuración**.
@@ -22,16 +22,17 @@ ng test --code-coverage
 
 ## 📊 Sprint Review
 
-Aquí está la presentación del Sprint 3, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
+Aquí está la presentación del Sprint 4, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
 
-[🔗 Ver presentación Sprint 3 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
+[🔗 Ver presentación Sprint 4 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
-### ✅ Resumen breve del Sprint 3
-- Responsividad
-- Performance
-- Asincronos.
-- Testing
-- RXJS
+### ✅ Resumen breve del Sprint 4
+- Lazy Loading
+- T-SQL
+- Login con BND
+- Consumo de la BD
+- Seguridad del login
+- EXTRA: Consumo de API con base de datos.
 
 ---
 
@@ -45,6 +46,49 @@ Este proyecto fue generado con la versión **18.2.18** de Angular usando el [Ang
 - Estilo limpio y responsivo
 
 ---
+
+## 🗃️ Base de Datos - SQL Server
+
+El directorio `Hubes/BaseDeDatos` contiene los archivos necesarios para crear y poblar la base de datos utilizada por la API.
+
+### 📁 Archivos incluidos
+
+- `schema.sql`: define la estructura de la base de datos (tablas, relaciones, etc.).
+- `datos.sql`: carga de datos iniciales.
+- `backup.sql` *(si aplica)*: respaldo completo de la base de datos.
+
+Puedes ejecutar estos archivos en:
+
+- **SQL Server Management Studio**
+
+
+---
+
+## 🔌 Backend - MegaApi (.NET)
+
+El proyecto incluye una API desarrollada en **.NET** para servir datos desde la base de datos al frontend Angular.
+
+### 📁 Ubicación del backend
+`Hubes/MegaApi`
+
+### ▶️ Cómo ejecutar la API
+
+1. Entra al directorio de la API:
+
+```bash
+cd MegaApi
+
+### 2. Ejecuta el servidor:
+
+dotnet run
+
+### 3. La API quedará disponible en:
+
+http://localhost:5120
+
+---
+
+
 
 ## 📸 Vista previa - Mockups
 
@@ -87,7 +131,8 @@ Este proyecto fue generado con la versión **18.2.18** de Angular usando el [Ang
 - HTML  
 - CSS  
 - TypeScript  
-- JSON
+- SQL Server
+- .NET(C#)
 
 ---
 

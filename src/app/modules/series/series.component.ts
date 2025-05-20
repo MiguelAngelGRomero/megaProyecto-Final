@@ -2,8 +2,7 @@
 import { Component } from '@angular/core';
 import { HubComponent } from '@shared/hub/hub.component'; // Componente compartido usado en la vista
 import { CommonModule } from '@angular/common'; // Funcionalidades comunes de Angular
-import contenidoSeries from 'src/app/data/series.json'; // Archivo JSON con los datos de series
-
+import { ContenidoService } from 'src/app/services/Contenido.service';
 // Declaración del componente como standalone
 @Component({
   selector: 'app-series',
@@ -16,10 +15,20 @@ export class SeriesComponent {
   // Arreglo que contendrá las series cargadas
   contenidoSeries: any[] = [];
   
+  constructor(private contenidoService: ContenidoService) {}
+
   // Se ejecuta cuando el componente se inicializa
   ngOnInit(): void {
-    // Carga los datos desde el JSON y los asigna al arreglo
-    this.contenidoSeries = contenidoSeries.contenido;
+    this.contenidoService.obtenerContenidos().subscribe({
+      next: (data) => {
+        this.contenidoSeries = data.filter((item: any) =>
+          item.tipo.toLowerCase() === 'serie'
+        );
+      },
+      error: (err) => {
+        console.error('Error cargando series:', err);
+      }
+    }); // ← faltaba cerrar aquí
   }
 
   // Muestra un mensaje cuando el usuario indica que le gusta una serie
