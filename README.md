@@ -29,7 +29,7 @@ Aquí está la presentación del Sprint 4, donde se muestran las tareas completa
 ### ✅ Resumen breve del Sprint 4
 - Lazy Loading
 - T-SQL
-- Login con BND
+- Login con BD
 - Consumo de la BD
 - Seguridad del login
 - EXTRA: Consumo de API con base de datos.
