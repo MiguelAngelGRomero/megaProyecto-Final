@@ -1,52 +1,52 @@
 .titulo {
-    text-align: left;
+    text-align: left; /* Alinea el texto del título a la izquierda */
 }
 
 h1 {
-    color: white;
-    border-radius: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: .5px 1px;
+    color: white; /* Establece el color del texto en blanco */
+    border-radius: 4px; /* Aplica esquinas ligeramente redondeadas al contenedor del título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna con alternativas seguras */
+    padding: .5px 1px; /* Espaciado interno: 0.5px arriba/abajo, 1px izquierda/derecha */
 }
 
 .divContenido {
-    position: relative;
-    left: 25px;
-    background-color: #1e1e1e;
-    border-radius: 12px;
-    padding: 10px;
-    width: 300px;
-    color: white;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    display: inline-block;
-    z-index: 1;
+    position: relative; /* Permite desplazar el elemento con `left`, `top`, etc. */
+    left: 25px; /* Desplaza el contenedor 25px a la derecha */
+    background-color: #1e1e1e; /* Fondo oscuro del contenedor */
+    border-radius: 12px; /* Bordes redondeados para un aspecto moderno */
+    padding: 10px; /* Espacio interno entre el borde y el contenido */
+    width: 300px; /* Ancho fijo del contenedor */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente del texto */
+    margin: 20px; /* Espacio externo alrededor del contenedor */
+    display: inline-block; /* Permite que los elementos estén uno al lado del otro */
+    z-index: 1; /* Nivel de apilamiento por encima de elementos con menor z-index */
 }
 
 .imagen {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    display: block;
-    z-index: 0;
+    width: 100%; /* Imagen ocupa el 100% del ancho del contenedor padre */
+    height: auto; /* Altura automática para mantener proporción */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    margin-bottom: 15px; /* Espacio inferior entre la imagen y el siguiente elemento */
+    display: block; /* Elimina espacio inferior típico de imágenes inline */
+    z-index: 0; /* Nivel de apilamiento más bajo (útil si hay overlays) */
 }
 
 button {
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    padding: 10px 35px;
-    margin: 8px 6px;
-    border-radius: 8px;
-    border: none;
-    position: relative;
-    z-index: 10;
+    background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+    color: white; /* Texto blanco para contraste con fondo oscuro */
+    padding: 10px 35px; /* Espaciado interno: 10px vertical, 35px horizontal */
+    margin: 8px 6px; /* Espacio exterior: 8px vertical, 6px horizontal */
+    border-radius: 8px; /* Bordes redondeados para los botones */
+    border: none; /* Sin borde por defecto */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
 }
 
 button:hover {
-    border: solid 1px white;
-    background-color: white;
-    color: black;
+    border: solid 1px white; /* Al pasar el cursor, aparece un borde blanco */
+    background-color: white; /* Fondo blanco al hacer hover */
+    color: black; /* El texto se vuelve negro al hacer hover */
 }
 

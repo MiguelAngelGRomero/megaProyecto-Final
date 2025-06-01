@@ -1,4 +1,4 @@
-# 🎬 megaProyecto - Sprint 4  T-SQL - Hubes
+# 🎬 megaProyecto - Sprint 5  C#
 **by Miguel Angel Gómez Romero**
 
 Este es un proyecto web que simula una plataforma de streaming con navegación entre secciones como **Películas**, **Series**, **Favoritos** y **Configuración**.
@@ -24,15 +24,15 @@ ng test --code-coverage
 
 Aquí está la presentación del Sprint 4, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
 
-[🔗 Ver presentación Sprint 4 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
+[🔗 Ver presentación Sprint 5 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
-### ✅ Resumen breve del Sprint 4
-- Lazy Loading
-- T-SQL
-- Login con BD
-- Consumo de la BD
-- Seguridad del login
-- EXTRA: Consumo de API con base de datos.
+### ✅ Resumen breve del Sprint 5
+- API en ASP.net o net core - MVC
+- Conexion con el proyecto de Angular
+- Implementacion de login con Backend
+- CORS
+- Un solo Repo
+- Mejoras propias
 
 ---
 
@@ -168,6 +168,12 @@ http://localhost:4200/
 ## 📁 Contenido JSON
 
 El contenido multimedia se divide en tres archivos:
-- `contenido.json`: Contiene un listado mixto de contenido.
-- `series.json`: Contiene un listado exclusivo de series.
-- `peliculas.json`: Contiene un listado exclusivo de películas.
+- `contenido.json`: Contiene un listado mixto de contenido que tiene una division de si es pelicula o serie.
+
+---
+
+## Entidad Relacion Prematuro
+
+Este es un diagrama E-R muy prematuro que ni conexiones tiene pero estoy preparando
+
+![ER](./src/app/data/EntidadRelacion.png)

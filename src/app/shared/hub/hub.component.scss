@@ -4,8 +4,8 @@
 
 
 button {
-    background-color: rgba(0, 0, 0, 0); // Fondo transparente.
-    color: white; // Color del texto del botón.
+    background-color: rgba(36, 36, 36, 0); // Fondo transparente.
+    color: rgb(243, 238, 238); // Color del texto del botón.
     padding: 10px 35px; // Espaciado interno (vertical 10px, horizontal 35px).
     margin: 8px 6px; // Espacio exterior (vertical 8px, horizontal 6px).
     border-radius: 8px; // Bordes redondeados para los botones.
@@ -15,7 +15,7 @@ button {
 }
 
 button:hover {
-    border: solid 1px white; // Agrega un borde blanco al pasar el mouse.
-    background-color: white; // Fondo blanco en hover.
-    color: black; // Cambia el color del texto a negro en hover.
+    border: solid 1px rgb(243, 238, 238); // Agrega un borde blanco al pasar el mouse.
+    background-color: rgb(243, 238, 238); // Fondo blanco en hover.
+    color: rgb(36, 36, 36); // Cambia el color del texto a negro en hover.
 }

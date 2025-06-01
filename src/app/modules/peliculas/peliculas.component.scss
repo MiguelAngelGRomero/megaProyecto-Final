@@ -26,12 +26,13 @@ h1 {
 }
 
 .imagen {
-    width: 100%; // La imagen ocupará el 100% del ancho del contenedor.
-    height: auto; // Mantiene la proporción original de la imagen.
-    border-radius: 8px; // Bordes ligeramente redondeados en la imagen.
-    margin-bottom: 15px; // Espacio inferior entre la imagen y el siguiente elemento.
-    display: block; // Evita que la imagen se comporte como `inline`.
-    z-index: 0; // Nivel más bajo de apilamiento (por si hay elementos encima).
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor padre (.divContenido en este caso) */
+    height: 200px; /* Altura fija para todas las imágenes (puedes ajustar según el diseño deseado) */
+    object-fit: cover; /* Escala la imagen para llenar el contenedor sin distorsión, recortando si es necesario */
+    border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
+    margin-bottom: 15px; /* Espacio entre la imagen y el siguiente elemento (por ejemplo, un botón o título) */
+    display: block; /* Hace que la imagen se comporte como un bloque y no tenga espacio extra debajo como los elementos inline */
+    z-index: 0; /* Nivel de apilamiento bajo, útil si hay elementos superpuestos (como botones) */
 }
 
 button {
@@ -49,9 +50,4 @@ button:hover {
     border: solid 1px white; // Agrega un borde blanco al pasar el mouse.
     background-color: white; // Fondo blanco en hover.
     color: black; // Cambia el color del texto a negro en hover.
-}
-
-.imagen {
-    width: 300px; /* tamaño que quieres mostrar */
-    height: auto;
 }

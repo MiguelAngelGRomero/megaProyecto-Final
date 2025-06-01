@@ -227,3 +227,6 @@ C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\obj\Debug\net9.0\refint\Peli
 C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\obj\Debug\net9.0\PeliculasApi.pdb
 C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\obj\Debug\net9.0\PeliculasApi.genruntimeconfig.cache
 C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\obj\Debug\net9.0\ref\PeliculasApi.dll
+C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PC\MegaProyecto\Hubes\MegaApi\PeliculasApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
