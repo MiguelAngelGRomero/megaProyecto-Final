@@ -20,6 +20,14 @@ ng test --code-coverage
 
 ---
 
+## Swagger
+
+swagger api
+
+![Swagger](./src/app/data/Swagger.png)
+
+---
+
 ## 📊 Sprint Review
 
 Aquí está la presentación del Sprint 4, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
