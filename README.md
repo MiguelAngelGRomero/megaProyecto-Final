@@ -20,24 +20,26 @@ ng test --code-coverage
 
 ---
 
-## Swagger
+## Swagger 🕶️
 
-swagger api
-
+La API está documentada con Swagger. Puedes ver la interfaz interactiva accediendo a:
+```bash
+http://localhost:5120/index.html
+```
 ![Swagger](./src/app/data/Swagger.png)
 
 ---
 
 ## 📊 Sprint Review
 
-Aquí está la presentación del Sprint 4, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
+Aquí está la presentación del Sprint 5, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
 
 [🔗 Ver presentación Sprint 5 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
 ### ✅ Resumen breve del Sprint 5
 - API en ASP.net o net core - MVC
-- Conexion con el proyecto de Angular
-- Implementacion de login con Backend
+- Conexión con el proyecto de Angular
+- Implementación de login con Backend
 - CORS
 - Un solo Repo
 - Mejoras propias
@@ -81,16 +83,16 @@ El proyecto incluye una API desarrollada en **.NET** para servir datos desde la 
 
 ### ▶️ Cómo ejecutar la API
 
+```bash
 1. Entra al directorio de la API:
 
-```bash
 cd MegaApi
 
-### 2. Ejecuta el servidor:
+2. Ejecuta el servidor con:
 
 dotnet run
 
-### 3. La API quedará disponible en:
+3. La API quedará disponible en:
 
 http://localhost:5120
 
@@ -175,13 +177,26 @@ http://localhost:4200/
 
 ## 📁 Contenido JSON
 
-El contenido multimedia se divide en tres archivos:
-- `contenido.json`: Contiene un listado mixto de contenido que tiene una division de si es pelicula o serie.
+- `contenido.json`: Incluye un listado mixto que distingue entre películas y series.
 
 ---
 
-## Entidad Relacion Prematuro
+## 📐 Diagrama Entidad-Relación (prototipo)
 
-Este es un diagrama E-R muy prematuro que ni conexiones tiene pero estoy preparando
+Este es un primer borrador del diagrama E-R, Actualmente está en proceso de desarrollo.
 
 ![ER](./src/app/data/EntidadRelacion.png)
+
+
+## Rutas de la api
+
+- CORS habilitado para localhost:4200
+
+### 📡 Rutas principales (API REST)
+
+- Rutas:
+  - `/api/contenido`
+  - `/api/contenido/{contenidoId}`
+  - `/api/Usuario`
+  - `/api/Usuario/{UsuarioId}`
+  - `/api/Usuario/login`
