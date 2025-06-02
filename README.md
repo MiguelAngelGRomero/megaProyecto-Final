@@ -188,10 +188,6 @@ Este es un primer borrador del diagrama E-R, Actualmente está en proceso de des
 ![ER](./src/app/data/EntidadRelacion.png)
 
 
-## Rutas de la api
-
-- CORS habilitado para localhost:4200
-
 ### 📡 Rutas principales (API REST)
 
 - Rutas:
