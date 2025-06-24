@@ -220,11 +220,11 @@ docker run -d -p 5120:5120 --name hubes-api megaapi:latest
 
 5. 
 
-Ver logs del frontend
+1. Ver logs del frontend
 
 docker logs hubes-frontend
 
-logs de la API
+2. logs de la API
 
 docker logs hubes-api
 
