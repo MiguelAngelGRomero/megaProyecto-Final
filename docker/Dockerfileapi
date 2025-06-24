@@ -1,0 +1,29 @@
+# Dockerfile para MegaApi
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+
+# Copiar archivos de proyecto
+COPY MegaApi/PeliculasApi/PeliculasApi.csproj MegaApi/PeliculasApi/
+RUN dotnet restore MegaApi/PeliculasApi/PeliculasApi.csproj
+
+# Copiar todo el código fuente
+COPY . .
+
+# Construir y publicar
+RUN dotnet build MegaApi/PeliculasApi/PeliculasApi.csproj -c Release -o /app/build
+RUN dotnet publish MegaApi/PeliculasApi/PeliculasApi.csproj -c Release -o /app/publish /p:UseAppHost=false
+
+# Imagen de producción
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+
+# Exponer puerto
+EXPOSE 5120
+
+# Variables de entorno
+ENV ASPNETCORE_URLS=http://0.0.0.0:5120
+ENV ASPNETCORE_ENVIRONMENT=Production
+
+# Comando para ejecutar
+CMD ["dotnet", "PeliculasApi.dll"]

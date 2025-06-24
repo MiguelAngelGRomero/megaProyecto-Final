@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # Base de datos SQL Server con restauración automática
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: hubes-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Hubes123!
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ../BaseDeDatos/backup:/backup
+    networks:
+      - hubes-network
+
+  # API .NET
+  megaapi:
+    build:
+      context: ..
+      dockerfile: dist/Dockerfileapi
+    container_name: hubes-api
+    ports:
+      - "5120:5120"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__HubConnection=Server=sqlserver;Database=Hub;User Id=sa;Password=Hubes123!;TrustServerCertificate=True;MultipleActiveResultSets=true
+      - OrigenesPermitidos=http://localhost:4200
+    depends_on:
+      - sqlserver
+    networks:
+      - hubes-network
+    restart: unless-stopped
+
+  # Frontend Angular
+  hubes-frontend:
+    build:
+      context: ..
+      dockerfile: dist/Dockerfile
+    container_name: hubes-frontend
+    ports:
+      - "4200:4200"
+    depends_on:
+      - megaapi
+    networks:
+      - hubes-network
+    restart: unless-stopped
+
+volumes:
+  sqlserver_data:
+    driver: local
+
+networks:
+  hubes-network:
+    driver: bridge 
