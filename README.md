@@ -1,4 +1,4 @@
-# 🎬 megaProyecto - Sprint 5  C#
+# 🎬 megaProyecto - Sprint Final
 **by Miguel Angel Gómez Romero**
 
 Este es un proyecto web que simula una plataforma de streaming con navegación entre secciones como **Películas**, **Series**, **Favoritos** y **Configuración**.
@@ -32,16 +32,13 @@ http://localhost:5120/index.html
 
 ## 📊 Sprint Review
 
-Aquí está la presentación del Sprint 5, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
+Aquí está la presentación del Sprint final, donde se muestran las tareas completadas y los próximos pasos. Puedes ver el documento completo a continuación:
 
-[🔗 Ver presentación Sprint 5 (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
+[🔗 Ver presentación Sprint final (Google Slides)](https://docs.google.com/document/d/1jvX2du60K6qKAHkLOrE8So7O4oBX9OYkmCtNh-Hy7k0/edit?usp=sharing)
 
-### ✅ Resumen breve del Sprint 5
-- API en ASP.net o net core - MVC
-- Conexión con el proyecto de Angular
-- Implementación de login con Backend
-- CORS
-- Un solo Repo
+### ✅ Resumen breve del Sprint Final
+- Docker
+
 - Mejoras propias
 
 ---
@@ -196,3 +193,39 @@ Este es un primer borrador del diagrama E-R, Actualmente está en proceso de des
   - `/api/Usuario`
   - `/api/Usuario/{UsuarioId}`
   - `/api/Usuario/login`
+
+
+## 🐳 Intento de Docker...
+
+Se intento crear todo en un solo repositorio muriendo en el intento, pero se creo las imagenes individuales
+
+```bash
+1. Desde el directorio raíz del proyecto
+
+docker build -t megaapi:latest -f dist/Dockerfileapi .
+
+
+2. Desde el directorio raíz del proyecto
+
+docker build -t hubes:latest -f dist/Dockerfile .
+
+4. Comandos para correr:
+
+# Frontend
+docker run -d -p 4200:4200 --name hubes-frontend hubes:latest
+
+# API
+docker run -d -p 5120:5120 --name hubes-api megaapi:latest
+
+
+5. 
+
+Ver logs del frontend
+
+docker logs hubes-frontend
+
+logs de la API
+
+docker logs hubes-api
+
+```
